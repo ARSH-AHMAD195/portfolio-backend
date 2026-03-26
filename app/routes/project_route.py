@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, UploadFile
 from sqlalchemy.orm import Session
-from core.database import get_db
-from models.projects import Project
-from schema.projects import ProjectCreate
+from app.core.database import get_db
+from app.models.projects import Project
+from app.schema.projects import ProjectCreate
 
 router = APIRouter(prefix="/projects", tags=["Projects"])
 
